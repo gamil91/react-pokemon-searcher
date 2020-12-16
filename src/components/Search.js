@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Search = props => {
+const Search = ({ searched }) => {
+
+  
+
   return (
     <div className="ui search">
       <div className="ui icon input">
-        <input className="prompt"/>
+        <input onChange={(e) => searched(e.target.value)} className="prompt"/>
         <i className="search icon" />
       </div>
     </div>
