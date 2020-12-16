@@ -50,7 +50,7 @@ class PokemonPage extends React.Component {
     .then(addedPokemon => {
       this.setState(prevState => {
         return {
-          pokemons: [...prevState.pokemons, addedPokemon]
+          pokemons: [addedPokemon, ...prevState.pokemons]
         }
       })
     })
